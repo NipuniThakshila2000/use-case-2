@@ -794,17 +794,15 @@ h2 {
   width: 100%;
   max-width: none;
   margin: 26px 0 0;
-  padding: 24px 26px;
-  border: 1px solid rgba(215, 174, 99, 0.36);
-  border-left: 3px solid #d7ae63;
-  border-radius: 22px;
+  padding: 18px;
+  border: 0;
+  border-left: 3px solid var(--brand);
+  border-radius: 16px;
   color: var(--charcoal);
-  background:
-    linear-gradient(135deg, rgba(185, 131, 47, 0.12), rgba(31, 111, 100, 0.08)),
-    rgba(255, 255, 255, 0.8);
+  background: var(--brand-soft);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.42rem;
-  line-height: 1.38;
+  font-size: 1rem;
+  line-height: 1.42;
 }
 
 .benefit-card {
@@ -1085,8 +1083,8 @@ h2 {
   }
 
   .benefits-highlight {
-    padding: 20px;
-    font-size: 1.16rem;
+    padding: 18px;
+    font-size: 1rem;
   }
 
   .case-image {
