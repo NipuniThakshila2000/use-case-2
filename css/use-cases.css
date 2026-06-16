@@ -102,6 +102,13 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero h2 {
+  max-width: 760px;
+  margin-bottom: 22px;
+  font-size: 5.25rem;
+  line-height: 0.9;
+}
+
 .hero-title {
   max-width: 760px;
   margin-bottom: 24px;
@@ -625,6 +632,11 @@ h2 {
   padding-top: 76px;
 }
 
+.home-banner {
+  padding-top: 70px;
+  padding-bottom: 76px;
+}
+
 .conference-card {
   padding: 42px;
   border: 1px solid var(--line);
@@ -638,6 +650,16 @@ h2 {
 .conference-intro {
   max-width: 920px;
   margin-bottom: 34px;
+}
+
+.home-banner .conference-intro {
+  max-width: 980px;
+}
+
+.home-banner .conference-intro h1 {
+  max-width: 980px;
+  font-size: 4.7rem;
+  line-height: 0.94;
 }
 
 .sandbox-feature {
@@ -874,6 +896,10 @@ h2 {
     font-size: 3.35rem;
   }
 
+  .home-banner .conference-intro h1 {
+    font-size: 3.7rem;
+  }
+
   .hero-title {
     font-size: 2.35rem;
   }
@@ -891,6 +917,16 @@ h2 {
 
   .hero {
     padding-top: 48px;
+  }
+
+  .home-banner {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .home-banner .conference-intro h1 {
+    font-size: 2.65rem;
+    line-height: 1;
   }
 
   .eyebrow {
