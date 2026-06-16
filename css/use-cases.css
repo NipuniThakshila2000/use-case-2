@@ -780,6 +780,102 @@ h2 {
   text-transform: uppercase;
 }
 
+.benefits-section {
+  padding-top: 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.benefit-card {
+  position: relative;
+  min-height: 250px;
+  padding: 26px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow);
+}
+
+.benefit-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(31, 111, 100, 0.08), transparent 48%);
+}
+
+.benefit-card > span {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 20px;
+  border-radius: 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.benefit-card h3 {
+  margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefit-card p {
+  color: var(--stone);
+  line-height: 1.68;
+}
+
+.agent-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.agent-stack span {
+  padding: 8px 10px;
+  border: 1px solid rgba(31, 111, 100, 0.2);
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--brand-soft);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.highlight-benefit {
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 90% 8%, rgba(185, 131, 47, 0.22), transparent 18rem),
+    linear-gradient(135deg, #10201f, #193c39 58%, #0e2624);
+}
+
+.highlight-benefit h3,
+.highlight-benefit p {
+  color: #ffffff;
+}
+
+.highlight-benefit p {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.highlight-benefit > span {
+  background: var(--gold);
+}
+
 .outputs-section {
   padding-top: 74px;
 }
@@ -935,7 +1031,8 @@ h2 {
 
   .dashboard-grid,
   .case-grid,
-  .outputs-grid {
+  .outputs-grid,
+  .benefits-grid {
     grid-template-columns: 1fr;
   }
 
@@ -954,6 +1051,7 @@ h2 {
 
   .case-card,
   .output-card,
+  .benefit-card,
   .sandbox-feature,
   .layer-card {
     min-height: auto;
